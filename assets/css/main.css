@@ -2004,6 +2004,107 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+.modal-title {
+  color:  var(--color-primary) !important;/* Altera a cor do texto*/
+}
+/* Estilo para o modal */
+/* Estilo para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* Centraliza horizontalmente */
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%; /* Ajuste a altura máxima conforme necessário */
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  position: relative;
+}
+
+/* Estilo padrão do botão de fechar (.close) */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Adiciona uma transição para suavizar a transformação */
+}
+
+/* Estilo hover do botão de fechar (.close) */
+.close:hover {
+  transform: scale(0.8);
+  border-radius: 50%; /* Transforma a caixa em um círculo */
+  background-color: var(--color-secondary);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .modal-content {
+      width: 90%;
+  }
+}
+
+/* Styles for the form */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+
+/*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
 .blog .blog-pagination {

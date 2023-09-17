@@ -107,7 +107,35 @@
           <h2>Reserva Sala <span>Ucsal</span></h2>
           <p>Reserve uma sala de forma rápida e pratica.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="cadastro.html" class="btn-get-started">Reservar</a>
+
+            <button id="openModalBtn" class="btn-get-started">Reservar</button>
+
+            <div id="myModal" class="modal"  >
+                <div class="modal-content">
+                    <span class="close" id="closeModalBtn">&times;</span>
+                    <h2 class="modal-title">Solicitação de Sala</h2>
+                    <form>
+                        <label for="solicitante">Solicitante:</label>
+                        <input type="text" id="solicitante" name="solicitante" required>
+                        
+                        <label for="responsavel">Responsável:</label>
+                        <input type="text" id="responsavel" name="responsavel" required>
+                        
+                        <label for="motivo">Motivo da Solicitação:</label>
+                        <textarea id="motivo" name="motivo" required></textarea>
+                        
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                        
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                        
+                        <button type="button" id="submitBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+          
+
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Como reservar</span></a>
           </div>
         </div>
@@ -131,7 +159,7 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Agendamentos Pendentess</a></h4>
+              <h4 class="title"><a href="" class="stretched-link">Agendamentos Pendentes</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -157,9 +185,11 @@
   </section>
   <!-- End Hero Section -->
 
+  <!--
   <main id="main">
 
-    <!-- ======= Contact Section ======= -->
+   
+    
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -179,7 +209,7 @@
                   <h4>Location:</h4>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -187,7 +217,7 @@
                   <h4>Email:</h4>
                   <p>info@example.com</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex">
                 <i class="bi bi-phone flex-shrink-0"></i>
@@ -195,7 +225,7 @@
                   <h4>Call:</h4>
                   <p>+1 5589 55488 55</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex">
                 <i class="bi bi-clock flex-shrink-0"></i>
@@ -203,7 +233,7 @@
                   <h4>Open Hours:</h4>
                   <p>Mon-Sat: 11AM - 23PM</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
             </div>
 
           </div>
@@ -231,14 +261,15 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
+-->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
